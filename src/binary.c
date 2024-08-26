@@ -60,3 +60,10 @@ void print_sort(struct binary* root){
         print_sort(root->max);
     }
 }
+
+void delete_tree(struct binary* root) {
+    if (root==NULL) return;
+    delete_tree(root->min);
+    delete_tree(root->max);
+    free(root);
+}
