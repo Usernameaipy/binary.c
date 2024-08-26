@@ -8,4 +8,7 @@ struct binary {
     struct binary* min;
 };
 struct binary* init(int);
+struct binary* add(struct binary*, int);
+void print_recursively(struct binary*);
+void print_sort(struct binary*);
 #endif
